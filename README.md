@@ -1,31 +1,21 @@
-GDPR-Compliant Hospital Management System (Streamlit + SQLite)
-
-A secure hospital management dashboard designed with GDPR privacy principles, role-based access control, audit logging, and optional reversible anonymization using Fernet encryption.
-Built with Streamlit, Python, and SQLite.
+# GDPR-Compliant-Hospital-management-system
+A secure hospital management dashboard designed with GDPR privacy principles, role-based access control, audit logging, and optional reversible anonymization using Fernet encryption. Built with Streamlit, Python, and SQLite.
 
 ✨ Features
 🔐 Security + GDPR Compliance
 
-Role-Based Access Control (Admin, Doctor, Receptionist)
-
-Patient data anonymization (masking or optional reversible encryption)
-
-Data retention policy (auto-deletes records past admin-defined threshold)
-
-User consent banner stored per user
-
-Detailed audit logs for every action (timestamp, role, user activity)
-
-Secure handling of sensitive data (PII)
+Role-Based Access Control (Admin, Doctor, Receptionist).
+Patient data anonymization (masking or optional reversible encryption).
+Data retention policy (auto-deletes records past admin-defined threshold).
+User consent banner stored per user.
+Detailed audit logs for every action (timestamp, role, user activity).
+Secure handling of sensitive data (PII).
 
 📊 Operational Tools
 
-Real-time activity analytics (actions per day, actions by role)
-
-Dashboard UI for patient CRUD operations
-
+Real-time activity analytics (actions per day, actions by role).
+Dashboard UI for patient CRUD operations.
 Automatic database initialization
-
 Clean UI built using Streamlit components
 
 📁 Project Structure
@@ -41,16 +31,8 @@ hospital_management_system/
 1. Create Virtual Environment (Recommended)
 python -m venv .venv
 
-
-Activate:
-
-PowerShell
-
-.venv\Scripts\Activate
-
 2. Install Dependencies
 pip install -r requirements.txt
-
 
 If you don’t have it:
 
@@ -78,24 +60,8 @@ Install:
 
 pip install cryptography
 
-
 The app will automatically generate and store encryption_key.key.
 
-⚠️ Common Issues
-KeyError: 'day'
-
-Your audit log may be missing the day column.
-Ensure timestamps are grouped correctly or modify the grouping logic.
-
-Cryptography not found
-
-Install manually:
-
-pip install cryptography
-
-Streamlit fails to start
-
-Try:
 
 pip install streamlit --upgrade
 
